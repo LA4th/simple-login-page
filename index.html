@@ -4,37 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Page</title>
+  <!-- External CSS file -->
   <link rel="stylesheet" href="./src/style.css" />
 </head>
 <body class="font-roboto">
-  <div class="w-full h-screen">
-    <!-- <div class="hidden">
-      <img src="./public/log_pic.jpg" alt="login_profile">
-    </div> -->
-    <!-- CONTAINER LOGIN -->
-    <div class="w-full h-full flex items-center justify-center">
-      <!-- CONTAINER MAIN LOGIN -->
-      <div class="bg-body-blue flex flex-col items-center p-5 rounded-xl gap-y-5">
-        <!-- CONTAINER TEXT INFO LOGIN -->
-        <div class="flex flex-col items-center">
-          <span class="font-extrabold text-2xl">LOGIN</span>
-          <span>How to get started lorem ipsum do or at?</span>
-        </div>
-        <!-- CONTAINER INPUT LOGIN -->
-        <div class="flex flex-col w-full gap-y-3">
-          <input class="bg-white p-1.5 rounded-md" type="email" name="" id="" placeholder="Username">
-          <input class="bg-white p-1.5 rounded-md" type="password" name="" id="" placeholder="Password">
-        </div>
-        <!-- BUTTON LOGIN -->
-        <button class="p-1.5 w-32 bg-button-brown text-white font-bold rounded-md shadow-lg" type="button">Login Now</button>
-        <div class="mt-7 mb-7 flex flex-col w-full relative text-center">
-          <hr class="w-full border-1 border-gray-300">
-          <span class="bg-body-blue pl-1.5 pr-1.5 absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]"><strong>Login</strong> with Others</span>
-        </div>
-        <!-- CONTAINER OTHER LOGIN -->
-        <button class="flex flex-row w-full p-1.5 items-center justify-center border-2 border-button-brown rounded-md" type="button"><img class="w-7 h-7 mr-1.5" src="./icon_google_logo.svg" alt="google_logo">Login with <strong class="pl-1">google</strong></button>
+  <!-- MAIN WRAPPER -->
+  <div class="w-full h-screen flex flex-col items-center">
+    
+    <!-- LOGIN CARD WRAPPER -->
+    <div class="max-w-full w-[900px] m-auto flex flex-row rounded-2xl overflow-hidden">
+      
+      <!-- LEFT IMAGE SECTION (hidden sa mobile) -->
+      <div class="w-full h-full hidden md:block">
+        <img class="w-full h-full object-cover" src="./log_pic.jpg" alt="login_profile">
       </div>
+      
+      <!-- RIGHT LOGIN SECTION -->
+      <div class="w-full h-full flex items-center justify-center md:w-[1250px] md:pl-10 md:pr-10 md:pt-12 md:pb-12 md:bg-body-white">
+        
+        <!-- MAIN LOGIN BOX -->
+        <div class="bg-body-blue w-11/12 flex flex-col items-center p-5 rounded-xl gap-y-5">
+          
+          <!-- LOGIN HEADER TEXT -->
+          <div class="flex flex-col items-center">
+            <span class="font-extrabold text-2xl">LOGIN</span>
+            <span>How to get started lorem ipsum do or at?</span>
+          </div>
+          
+          <!-- INPUT FIELDS (username + password) -->
+          <div class="flex flex-col w-full gap-y-3">
+            <input class="bg-body-white p-1.5 rounded-md" type="email" placeholder="Username">
+            <input class="bg-body-white p-1.5 rounded-md" type="password" placeholder="Password">
+          </div>
+          
+          <!-- LOGIN BUTTON -->
+          <button class="p-1.5 w-32 bg-button-brown text-white font-bold rounded-md shadow-lg md:cursor-pointer" type="button">
+            Login Now
+          </button>
+          
+          <!-- DIVIDER (Login with others) -->
+          <div class="mt-7 mb-7 flex flex-col w-full relative text-center">
+            <hr class="w-full border-1 border-body-white">
+            <span class="bg-body-blue pl-1.5 pr-1.5 absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
+              <strong>Login</strong> with Others
+            </span>
+          </div>
+          
+          <!-- OTHER LOGIN OPTION (Google) -->
+          <button class="flex flex-row w-full p-1.5 items-center justify-center border-2 border-button-brown rounded-md md:cursor-pointer" type="button">
+            <img class="w-6 h-6 mr-1.5" src="./icon_google_logo.svg" alt="google_logo">
+            Login with <strong class="pl-1">Google</strong>
+          </button>
+        
+        </div>
+        <!-- END MAIN LOGIN BOX -->
+      
+      </div>
+      <!-- END RIGHT LOGIN SECTION -->
+    
     </div>
+    <!-- END LOGIN CARD WRAPPER -->
+  
   </div>
+  <!-- END MAIN WRAPPER -->
 </body>
 </html>
