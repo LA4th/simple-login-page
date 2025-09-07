@@ -13,7 +13,7 @@
   <div class="flex items-center justify-center min-h-screen px-4">
     
     <!-- LOGIN CARD -->
-    <div class="flex flex-col md:flex-row rounded-xl overflow-hidden shadow-xl w-full max-w-[900px] bg-white">
+    <div class="flex flex-col md:flex-row rounded-xl overflow-hidden w-full max-w-[900px] bg-white">
       
       <!-- LEFT IMAGE (hidden on mobile) -->
       <div class="hidden md:block w-1/2">
@@ -21,10 +21,10 @@
       </div>
       
       <!-- RIGHT CONTAINER -->
-      <div class="flex items-center justify-center w-full md:w-1/2 bg-body-white p-6">
+      <div class="flex items-center justify-center w-full md:w-2/3 bg-body-white md:p-6">
         
         <!-- LOGIN BOX -->
-        <div class="bg-body-blue w-full max-w-[400px] rounded-xl shadow-xl px-5 py-7 flex flex-col gap-y-4">
+        <div class="bg-body-blue w-full max-w-[400px] rounded-xl shadow-xl px-5 py-7 flex flex-col gap-y-4 items-center">
           
           <!-- HEADER -->
           <div class="text-center">
@@ -33,23 +33,23 @@
           </div>
           
           <!-- INPUTS -->
-          <div class="flex flex-col gap-y-2">
+          <div class="w-full flex flex-col gap-y-2">
             <input type="email" placeholder="Username" class="bg-body-white p-2 rounded-md">
             <input type="password" placeholder="Password" class="bg-body-white p-2 rounded-md">
           </div>
           
           <!-- LOGIN BUTTON -->
           <button type="button" class="w-full bg-button-blue p-2 rounded-md font-bold text-body-white 
-            hover:shadow-md hover:bg-hover-blue active:bg-button-blue transition duration-200">
+            hover:shadow-md hover:bg-hover-blue active:bg-button-blue transition duration-200 md:cursor-pointer">
             Login Now
           </button>
           
           <!-- FORGOT PASSWORD -->
-          <a href="#" class="text-center text-[12px] text-blue-500 border-b border-transparent hover:border-blue-500 transition">
+          <a href="#" class="text-center text-[12px] text-blue-500 border-b border-transparent hover:border-blue-500 transition md:duration-200">
             Forgot Password?
           </a>
           
-          <hr class="border border-body-white">
+          <hr class="w-full border border-body-white">
           
           <!-- REGISTER BUTTON -->
           <a href="#" class="w-full text-center bg-button-white p-2 rounded-md font-bold 
@@ -58,7 +58,7 @@
           </a>
           
           <!-- DIVIDER -->
-          <div class="relative flex items-center my-5">
+          <div class="w-full relative flex items-center my-5">
             <hr class="w-full border border-body-white">
             <span class="bg-body-blue px-2 absolute left-1/2 -translate-x-1/2">
               <strong>Login</strong> with Others
