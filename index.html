@@ -8,42 +8,80 @@
   <link rel="stylesheet" href="./src/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 </head>
-<body class="font-roboto">
-  <div class="max-w-full min-h-screen flex flex-col items-center">
-    <!-- WRAPPER LOGIN -->
-    <div class="max-w-full w-[900px] h-[500px] m-auto flex flex-row items-center rounded-xl overflow-hidden">
-      <!-- IMAGE LEFT POSITION -->
-      <img class="hidden w-full h-full object-cover md:block" src="./login_Banner_pic.jpg" alt="Login_Banner">
-      <!-- CONTAINER RIGHT POSITION LOGIN -->
-      <div class="px-1 w-full h-full md:max-w-full md:w-[1250px] md:flex md:items-center md:bg-body-white">
-        <!-- WRAPPER LOGIN USER -->
-        <div class="bg-body-blue w-full px-2 py-5 flex flex-col items-center gap-y-3.5 rounded-xl shadow-xl md:max-w-full md:w-[400px] md:m-auto md:px-5">
-          <!-- WRAPPER TEXT LOGIN INFO -->
-          <div class="flex flex-col text-center">
-            <span class="font-extrabold text-2xl">LOGIN</span>
-            <span>How to get started lorem ipsum do or at?</span>
-          </div>
-          <!-- WRAPPER USER INPUT LOGIN -->
-          <div class="w-full flex flex-col gap-y-1.5">
-            <input type="email" name="" id="" placeholder="Username" class="bg-body-white p-1.5 rounded-md">
-            <input type="password" name="" id="" placeholder="Password" class="bg-body-white p-1.5 rounded-md">
-          </div>
-          <button type="button" class="w-full bg-button-blue p-1.5 rounded-md font-bold text-body-white md:cursor-pointer md:hover:shadow-md md:hover:ease-in-out md:hover:duration-200 md:hover:bg-hover-blue md:active:bg-button-blue">Login Now</button>
-          <!-- BUTTON FORGOT PASSWORD -->
-          <a href="" class="text-center text-[12px] text-blue-500 border-b border-transparent md:hover:border-b-blue-500">Forgot Password?</a>
-          <hr class="w-full border-1 border-body-white">
-          <!-- BUTTON REGISTER -->
-          <a href="" class="w-full text-center bg-button-white p-1.5 rounded-md font-bold md:hover:bg-hover-white md:active:bg-button-white md:hover:shadow-md md:hover:duration-200 md:hover:ease-in-out">Register Now</a>
-          <!-- WRAPPER CUT OTHERS LOGIN -->
-          <div class="relative flex flex-col items-center text-center w-full my-7">
-            <hr class="border-1 border-body-white w-full">
-            <span class="bg-body-blue px-1.5   absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"><strong>Login</strong> with Others</span>
-          </div>
-          <!-- BUTTON GOOGLE -->
-          <a href="" class="w-full p-1 flex flex-row justify-center items-center gap-x-1 border-3 border-button-blue rounded-md md:hover:bg-button-blue md:hover:text-body-white"><img src="./icon_google_logo.svg" alt="Google_Logo" class="w-7">Connect with google</a>
-        </div>
+<body class="font-roboto bg-body-white">
+  <!-- FULLSCREEN FLEX CENTER -->
+  <div class="flex items-center justify-center min-h-screen px-4">
+    
+    <!-- LOGIN CARD -->
+    <div class="flex flex-col md:flex-row rounded-xl overflow-hidden shadow-xl w-full max-w-[900px] bg-white">
+      
+      <!-- LEFT IMAGE (hidden on mobile) -->
+      <div class="hidden md:block w-1/2">
+        <img src="./login_Banner_pic.jpg" alt="Login Banner" class="w-full h-full object-cover">
       </div>
+      
+      <!-- RIGHT CONTAINER -->
+      <div class="flex items-center justify-center w-full md:w-1/2 bg-body-white p-6">
+        
+        <!-- LOGIN BOX -->
+        <div class="bg-body-blue w-full max-w-[400px] rounded-xl shadow-xl px-5 py-7 flex flex-col gap-y-4">
+          
+          <!-- HEADER -->
+          <div class="text-center">
+            <span class="font-extrabold text-2xl">LOGIN</span>
+            <p class="text-sm">How to get started lorem ipsum do or at?</p>
+          </div>
+          
+          <!-- INPUTS -->
+          <div class="flex flex-col gap-y-2">
+            <input type="email" placeholder="Username" class="bg-body-white p-2 rounded-md">
+            <input type="password" placeholder="Password" class="bg-body-white p-2 rounded-md">
+          </div>
+          
+          <!-- LOGIN BUTTON -->
+          <button type="button" class="w-full bg-button-blue p-2 rounded-md font-bold text-body-white 
+            hover:shadow-md hover:bg-hover-blue active:bg-button-blue transition duration-200">
+            Login Now
+          </button>
+          
+          <!-- FORGOT PASSWORD -->
+          <a href="#" class="text-center text-[12px] text-blue-500 border-b border-transparent hover:border-blue-500 transition">
+            Forgot Password?
+          </a>
+          
+          <hr class="border border-body-white">
+          
+          <!-- REGISTER BUTTON -->
+          <a href="#" class="w-full text-center bg-button-white p-2 rounded-md font-bold 
+            hover:bg-hover-white active:bg-button-white hover:shadow-md transition duration-200">
+            Register Now
+          </a>
+          
+          <!-- DIVIDER -->
+          <div class="relative flex items-center my-5">
+            <hr class="w-full border border-body-white">
+            <span class="bg-body-blue px-2 absolute left-1/2 -translate-x-1/2">
+              <strong>Login</strong> with Others
+            </span>
+          </div>
+          
+          <!-- GOOGLE LOGIN -->
+          <a href="#" class="w-full flex items-center justify-center gap-x-2 border-2 border-button-blue rounded-md p-2 
+            hover:bg-button-blue hover:text-body-white transition duration-200">
+            <img src="./icon_google_logo.svg" alt="Google Logo" class="w-6 h-6">
+            Connect with Google
+          </a>
+          
+        </div>
+        <!-- END LOGIN BOX -->
+        
+      </div>
+      <!-- END RIGHT CONTAINER -->
+      
     </div>
+    <!-- END LOGIN CARD -->
+    
   </div>
+  <!-- END FLEX CENTER -->
 </body>
 </html>
