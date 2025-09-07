@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import "tailwindcss";
 @import "@iscodex/tailwindcss-animate";
+@import "tailwindcss";
+
 
 @theme {
   /* CUSTOM FONT */
   --font-roboto: "Roboto", sans-serif;
   /* CUSTOM COLOR */
-  --color-body-blue: #A2D2DF;
-  --color-button-brown: #BC7C7C;
+  --color-body-blue: #89A8B2;
+  --color-button-blue: #B3C8CF;
+  --color-hover-blue: #9FB6BD;
+  --color-button-white: #F1F0E8;
+  --color-hover-white: #D9D8D1;
   --color-body-white: #F7F7F7;
 }
 
