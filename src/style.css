@@ -12,9 +12,11 @@
   --color-hover-blue: #9FB6BD;
   --color-button-white: #F1F0E8;
   --color-hover-white: #D9D8D1;
+  --color-button-red: #CC1D1D;
+  --color-hover-red: #B81A1A;
   --color-body-white: #F7F7F7;
 }
 
-* {
+/* * {
   border: 1px solid red;
-}
+} */
